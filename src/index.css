@@ -1,0 +1,421 @@
+/* ==========================================================================
+   Vasant Valley School — React Redesign
+   Design tokens
+   Colour:  Maroon 900 #5C1A24 · Maroon 700 #7E2A38 · Beige 100 #F5EEE1
+            Beige 200 #E9DCC5 · Ink #241A18 · Brass accent #A9843F
+   Type:    Fraunces (display) · Work Sans (body) · Space Mono (labels/data)
+   ========================================================================== */
+
+:root {
+  --maroon-900: #5C1A24;
+  --maroon-800: #6E212C;
+  --maroon-700: #7E2A38;
+  --maroon-100: #F2E3E1;
+  --beige-100: #F6EFE3;
+  --beige-200: #ECDFC7;
+  --beige-300: #DFCBA3;
+  --ink: #241A18;
+  --ink-soft: #5A4A45;
+  --brass: #A9843F;
+  --brass-light: #C7A05F;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --radius-lg: 1.5rem;
+  --radius-md: 1rem;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 2px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--beige-100);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+.vvs-eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  color: var(--maroon-700);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.vvs-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--maroon-900);
+  max-width: 780px;
+}
+
+.vvs-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--maroon-900);
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.vvs-body {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* ---------------- Page header (used on every non-home page) ---------------- */
+.vvs-page-header {
+  background: linear-gradient(180deg, var(--beige-100) 0%, var(--beige-200) 100%);
+  border-bottom: 1px solid var(--beige-300);
+  padding-block: 3.5rem 3rem;
+}
+
+/* ---------------- Navbar ---------------- */
+.vvs-navbar {
+  background-color: var(--beige-100);
+  border-bottom: 1px solid var(--beige-300);
+  padding-block: 0.6rem;
+  transition: box-shadow 0.2s ease;
+}
+.vvs-navbar.shadow-active { box-shadow: 0 4px 18px rgba(92, 26, 36, 0.08); }
+
+.vvs-brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+.vvs-brand-mark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  background: var(--maroon-900);
+  color: var(--beige-100);
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.vvs-brand-mark-light { background: var(--brass); color: var(--maroon-900); }
+.vvs-brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+.vvs-brand-name { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--maroon-900); }
+.vvs-brand-tag { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; color: var(--brass); text-transform: uppercase; }
+
+.vvs-navbar .nav-link {
+  color: var(--ink);
+  font-weight: 500;
+  padding-inline: 0.9rem;
+  position: relative;
+}
+.vvs-navbar .nav-link:hover { color: var(--maroon-800); }
+.vvs-navbar .nav-link.active { color: var(--maroon-900); font-weight: 700; }
+
+.vvs-btn-enquire {
+  background: var(--maroon-900);
+  color: var(--beige-100) !important;
+  border-radius: 999px;
+  padding: 0.5rem 1.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.vvs-btn-enquire:hover { background: var(--maroon-700); }
+
+/* ---------------- Hero (Home page) ---------------- */
+.vvs-hero {
+  background: linear-gradient(180deg, var(--beige-100) 0%, var(--beige-200) 100%);
+  padding-block: 4.5rem 3rem;
+  border-bottom: 1px solid var(--beige-300);
+}
+.vvs-hero-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  color: var(--maroon-900);
+  line-height: 1.02;
+}
+.vvs-hero-title em { color: var(--brass); font-style: normal; }
+.vvs-hero-sub {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin-top: 1.4rem;
+  line-height: 1.7;
+}
+
+.vvs-btn-primary {
+  background: var(--maroon-900);
+  color: var(--beige-100);
+  border-radius: 999px;
+  padding: 0.75rem 1.7rem;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+.vvs-btn-primary:hover { background: var(--maroon-700); color: var(--beige-100); }
+
+.vvs-btn-outline {
+  border: 1.5px solid var(--maroon-900);
+  color: var(--maroon-900);
+  border-radius: 999px;
+  padding: 0.75rem 1.7rem;
+  font-weight: 600;
+  background: transparent;
+  text-decoration: none;
+  display: inline-block;
+}
+.vvs-btn-outline:hover { background: var(--maroon-900); color: var(--beige-100); }
+
+.vvs-btn-light {
+  background: var(--beige-100);
+  color: var(--maroon-900);
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+.vvs-btn-light:hover { background: var(--brass-light); color: var(--maroon-900); }
+
+.vvs-hero-media img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(92,26,36,0.18);
+}
+
+.vvs-stats {
+  margin-top: 3.5rem;
+  padding-top: 2.2rem;
+  border-top: 1px dashed var(--brass);
+}
+.vvs-stat-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--maroon-900);
+}
+.vvs-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* ---------------- Sections ---------------- */
+.vvs-section { padding-block: 5.5rem; }
+.vvs-section-alt { background: var(--beige-200); }
+
+.vvs-shadow { box-shadow: 0 20px 40px rgba(92,26,36,0.12); }
+
+.vvs-checklist { list-style: none; padding: 0; margin-top: 1.5rem; }
+.vvs-checklist li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--ink-soft);
+}
+.vvs-checklist li::before {
+  content: "\2713";
+  position: absolute; left: 0; top: 0;
+  color: var(--brass);
+  font-weight: 700;
+}
+
+/* ---------------- Pillars ---------------- */
+.vvs-pillar {
+  background: var(--beige-100);
+  border: 1px solid var(--beige-300);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.6rem;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.vvs-pillar:hover { transform: translateY(-6px); box-shadow: 0 16px 30px rgba(92,26,36,0.12); }
+.vvs-pillar-icon { font-size: 1.8rem; color: var(--brass); margin-bottom: 1rem; display: block; }
+.vvs-pillar h3 { font-family: var(--font-display); font-size: 1.15rem; color: var(--maroon-900); margin-bottom: 0.6rem; }
+.vvs-pillar p { color: var(--ink-soft); font-size: 0.95rem; margin: 0; }
+
+/* ---------------- Quick links (Home page → other pages) ---------------- */
+.vvs-quicklink {
+  display: block;
+  background: var(--beige-100);
+  border: 1px solid var(--beige-300);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.6rem;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.vvs-quicklink:hover { transform: translateY(-6px); box-shadow: 0 16px 30px rgba(92,26,36,0.12); color: inherit; }
+.vvs-quicklink i:first-child { font-size: 1.8rem; color: var(--brass); margin-bottom: 1rem; display: block; }
+.vvs-quicklink h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--maroon-900); margin-bottom: 0.5rem; }
+.vvs-quicklink p { color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 1rem; }
+.vvs-quicklink-cta { font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--maroon-800); }
+
+/* ---------------- Academic Tabs ---------------- */
+.vvs-tabs { border-bottom: 1px solid var(--beige-300); gap: 0.5rem; }
+.vvs-tabs .nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 0.9rem;
+  background: transparent;
+}
+.vvs-tabs .nav-link.active {
+  color: var(--maroon-900);
+  border-bottom-color: var(--maroon-900);
+  background: transparent;
+}
+.vvs-tab-content h3 { font-family: var(--font-display); color: var(--maroon-900); margin-bottom: 0.9rem; }
+.vvs-tab-content img { width: 100%; border-radius: var(--radius-md); box-shadow: 0 14px 30px rgba(92,26,36,0.14); }
+
+/* ---------------- Facilities Grid ---------------- */
+.vvs-facility {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--beige-100);
+  border: 1px solid var(--beige-300);
+  height: 100%;
+}
+.vvs-facility img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.vvs-facility-body { padding: 1.2rem 1.4rem; display: flex; align-items: center; gap: 0.8rem; }
+.vvs-facility-body i { color: var(--brass); font-size: 1.3rem; }
+.vvs-facility-body h3 { font-family: var(--font-display); font-size: 1.05rem; color: var(--maroon-900); margin: 0; }
+
+/* ---------------- CTA ---------------- */
+.vvs-cta {
+  background: var(--maroon-900);
+  color: var(--beige-100);
+  padding-block: 4rem;
+  text-align: center;
+}
+.vvs-cta-title { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 0.8rem; }
+.vvs-cta-sub { color: var(--beige-200); margin-bottom: 1.6rem; }
+
+/* ---------------- News / Events ---------------- */
+.vvs-pills .nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--maroon-900);
+  border: 1px solid var(--maroon-900);
+  border-radius: 999px;
+  margin-inline: 0.3rem;
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+}
+.vvs-pills .nav-link.active { background: var(--maroon-900); color: var(--beige-100); }
+
+.vvs-event-card {
+  background: var(--beige-100);
+  border: 1px solid var(--beige-300);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  height: 100%;
+}
+.vvs-event-date {
+  font-family: var(--font-mono);
+  color: var(--brass);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+.vvs-event-card h3 { font-family: var(--font-display); color: var(--maroon-900); margin: 0.5rem 0; font-size: 1.15rem; }
+.vvs-event-card p { color: var(--ink-soft); font-size: 0.92rem; margin: 0; }
+
+.vvs-notice-list { max-width: 720px; margin-inline: auto; }
+.vvs-notice-item {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--beige-300);
+  color: var(--ink-soft);
+}
+.vvs-notice-item i { color: var(--brass); margin-top: 0.2rem; }
+
+/* ---------------- Contact page ---------------- */
+.vvs-contact-heading { font-family: var(--font-display); color: var(--maroon-900); margin-bottom: 1.2rem; }
+.vvs-contact-list li { color: var(--ink-soft); margin-bottom: 0.9rem; }
+.vvs-contact-list i { color: var(--brass); margin-right: 0.6rem; }
+
+.vvs-form .form-label { font-weight: 600; color: var(--ink); }
+.vvs-form .form-control {
+  border-radius: 0.6rem;
+  border-color: var(--beige-300);
+  padding: 0.65rem 0.9rem;
+}
+.vvs-form .form-control:focus {
+  border-color: var(--maroon-700);
+  box-shadow: 0 0 0 0.2rem rgba(126, 42, 56, 0.15);
+}
+
+.vvs-form-success {
+  background: var(--beige-200);
+  border: 1px solid var(--beige-300);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  text-align: center;
+}
+.vvs-form-success i { font-size: 2rem; color: var(--maroon-700); margin-bottom: 0.6rem; display: block; }
+.vvs-form-success h3 { font-family: var(--font-display); color: var(--maroon-900); }
+
+/* ---------------- Footer ---------------- */
+.vvs-footer {
+  background: var(--ink);
+  color: var(--beige-200);
+  padding-block: 4rem 2rem;
+}
+.vvs-footer-text { color: #C9BDB6; font-size: 0.92rem; margin-top: 1rem; max-width: 32ch; }
+.vvs-footer-heading {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--brass-light);
+  margin-bottom: 1.1rem;
+}
+.vvs-footer-links, .vvs-footer-contact { list-style: none; padding: 0; margin: 0; }
+.vvs-footer-links li, .vvs-footer-contact li { margin-bottom: 0.7rem; font-size: 0.92rem; }
+.vvs-footer-links a { color: #C9BDB6; text-decoration: none; }
+.vvs-footer-links a:hover { color: var(--beige-100); }
+.vvs-footer-contact li i { color: var(--brass-light); margin-right: 0.5rem; }
+.vvs-social { display: flex; gap: 0.9rem; margin-top: 1.4rem; }
+.vvs-social a {
+  width: 36px; height: 36px;
+  border: 1px solid #4a3d38;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--beige-200);
+  text-decoration: none;
+}
+.vvs-social a:hover { background: var(--brass); border-color: var(--brass); color: var(--ink); }
+.vvs-footer-rule { border-color: #4a3d38; margin: 2.5rem 0 1.5rem; }
+.vvs-footer-copy { font-size: 0.8rem; color: #8a7b75; }
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 991.98px) {
+  .vvs-hero, .vvs-page-header { padding-block: 3rem 2rem; }
+  .vvs-stats { margin-top: 2.5rem; }
+}
