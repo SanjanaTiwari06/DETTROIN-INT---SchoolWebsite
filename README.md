@@ -5,14 +5,14 @@ multi-page React application for the Dettroin Full Stack Developer Internship,
 Round 1 assignment.
 
 ## Candidate Details
-- **Full Name:** Sanjana <!-- add your surname -->
-- **Intern ID:** <!-- add your Intern ID -->
-- **Email Address:** <!-- add your email -->
-- **GitHub Username:** <!-- add your GitHub username -->
+- **Full Name:** Sanjana Tiwari
+- **Intern ID:** Not Provided
+- **Email Address:** sanjanat0609@gmail.com
+- **GitHub Username:** https://github.com/SanjanaTiwari06
 - **Selected Website:** Vasant Valley School — https://www.vasantvalley.org/
 
 ## Live Demo
-<!-- add your Vercel deployment link here once deployed -->
+(https://dettroin-int-school-website-zeta.vercel.app/)
 
 ## Technologies Used
 - **React 19** (Vite)
