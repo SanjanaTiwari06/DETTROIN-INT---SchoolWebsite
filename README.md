@@ -51,13 +51,23 @@ Round 1 assignment.
 - **Responsive facilities grid**, scroll-to-top on route change, and accessible
   focus states throughout.
 
+## Visuals
+Instead of stock/placeholder photographs (which would need licensing before
+submission), every image on the site is an **original, hand-built SVG
+illustration** in the maroon/beige/brass palette — a campus scene for the hero,
+a students-and-book motif for About, and a themed icon illustration for each
+Academics pathway and Campus Life facility. These are original artwork, so
+there's nothing to swap out or license before submission; if you'd rather use
+real photography later, just replace the files in `public/images/` and keep the
+same filenames.
+
 ## Project Structure
 ```
 ├── index.html
 ├── vite.config.js
 ├── vercel.json
 ├── public/
-│   └── images/            # placeholder images — replace before final submission
+│   └── images/            # original SVG illustrations (see "Visuals" above)
 └── src/
     ├── main.jsx            # BrowserRouter + global CSS/Bootstrap imports
     ├── App.jsx             # <Routes> definitions
@@ -92,6 +102,4 @@ This is a standard Vite React app:
   (`/about`, `/academics`, etc.) works correctly on refresh/direct link.
 
 ## Notes
-- Images under `public/images/` are **placeholders** generated for layout purposes
-  and must be replaced with real/licensed photography before final submission.
 - `node_modules/` is git-ignored and must not be uploaded, per assignment guidelines.

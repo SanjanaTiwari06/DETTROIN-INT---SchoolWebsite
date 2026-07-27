@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className="col-lg-5">
               <div className="vvs-hero-media">
-                <img src="/images/hero-campus.jpg" alt="Vasant Valley School campus" className="img-fluid rounded-4" loading="lazy" />
+                <img src="/images/hero-campus.svg" alt="Vasant Valley School campus" className="img-fluid rounded-4" loading="lazy" />
               </div>
             </div>
           </div>

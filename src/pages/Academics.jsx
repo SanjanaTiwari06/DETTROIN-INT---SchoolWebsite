@@ -6,7 +6,7 @@ const tabs = [
     label: "CBSE Pathway",
     title: "Central Board of Secondary Education",
     text: "Our core CBSE stream runs from the Junior School through Class XII, with marksheets and results processed each June for the graduating batch. Science, Commerce and Humanities streams are offered at the senior level.",
-    image: "/images/academics-cbse.jpg",
+    image: "/images/academics-cbse.svg",
     alt: "CBSE classroom",
   },
   {
@@ -14,7 +14,7 @@ const tabs = [
     label: "IGCSE & A Levels",
     title: "IGCSE, AS & A Levels",
     text: "Introduced for Classes IX and X, the IGCSE curriculum gives students an internationally benchmarked alternative, continuing into AS and A Levels for Classes XI and XII.",
-    image: "/images/academics-igcse.jpg",
+    image: "/images/academics-igcse.svg",
     alt: "IGCSE classroom",
   },
   {
@@ -22,7 +22,7 @@ const tabs = [
     label: "Junior School",
     title: "Junior School",
     text: "The Junior School lays the groundwork for everything that follows — building curiosity, confidence and foundational skills before students move into the Senior School.",
-    image: "/images/academics-junior.jpg",
+    image: "/images/academics-junior.svg",
     alt: "Junior school students",
   },
 ];

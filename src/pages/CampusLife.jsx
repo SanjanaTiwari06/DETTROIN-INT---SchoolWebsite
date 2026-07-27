@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
 const facilities = [
-  { icon: "bi-flask", title: "Science & Computer Labs", image: "/images/facility-labs.jpg" },
-  { icon: "bi-trophy", title: "Sports & Athletics", image: "/images/facility-sports.jpg" },
-  { icon: "bi-palette", title: "Arts & Performance", image: "/images/facility-arts.jpg" },
-  { icon: "bi-book", title: "Library", image: "/images/facility-library.jpg" },
-  { icon: "bi-heart", title: "Community Outreach", image: "/images/facility-outreach.jpg" },
-  { icon: "bi-compass", title: "Educational Tours", image: "/images/facility-tours.jpg" },
+  { icon: "bi-flask", title: "Science & Computer Labs", image: "/images/facility-labs.svg" },
+  { icon: "bi-trophy", title: "Sports & Athletics", image: "/images/facility-sports.svg" },
+  { icon: "bi-palette", title: "Arts & Performance", image: "/images/facility-arts.svg" },
+  { icon: "bi-book", title: "Library", image: "/images/facility-library.svg" },
+  { icon: "bi-heart", title: "Community Outreach", image: "/images/facility-outreach.svg" },
+  { icon: "bi-compass", title: "Educational Tours", image: "/images/facility-tours.svg" },
 ];
 
 export default function CampusLife() {

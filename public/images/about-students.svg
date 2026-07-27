@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F6EFE3"/>
+    <stop offset="1" stop-color="#ECDFC7"/>
+  </linearGradient>
+</defs>
+<rect width="700" height="520" fill="url(#bg)"/>
+
+<circle cx="580" cy="90" r="46" fill="#C7A05F" opacity="0.5"/>
+<!-- open book -->
+<path d="M120 380 Q 350 320 580 380 L580 420 Q 350 360 120 420 Z" fill="#5C1A24"/>
+<path d="M120 380 Q 350 320 350 340 L350 380 Q 120 420 120 380 Z" fill="#7E2A38"/>
+<!-- figures -->
+<g>
+  <circle cx="230" cy="250" r="30" fill="#5C1A24"/>
+  <rect x="195" y="280" width="70" height="90" rx="20" fill="#7E2A38"/>
+</g>
+<g>
+  <circle cx="350" cy="230" r="34" fill="#A9843F"/>
+  <rect x="310" y="264" width="80" height="100" rx="22" fill="#5C1A24"/>
+</g>
+<g>
+  <circle cx="470" cy="250" r="30" fill="#7E2A38"/>
+  <rect x="435" y="280" width="70" height="90" rx="20" fill="#A9843F"/>
+</g>
+<rect x="0" y="440" width="700" height="80" fill="#ECDFC7"/>
+
+</svg>
