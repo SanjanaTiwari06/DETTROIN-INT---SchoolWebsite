@@ -6,7 +6,7 @@ const facilities = [
   { icon: "bi-palette", title: "Arts & Performance", image: "/public/images/Art.jpg" },
   { icon: "bi-book", title: "Library", image: "/public/images/Library.jpg" },
   { icon: "bi-heart", title: "Community Outreach", image: "/public/images/Outreach.jpg" },
-  { icon: "bi-compass", title: "Educational Tours", image: "/public/images/Tours.jpeg" },
+  { icon: "bi-compass", title: "Educational Tours", image: "/images/facility-tours.svg" },
 ];
 
 export default function CampusLife() {

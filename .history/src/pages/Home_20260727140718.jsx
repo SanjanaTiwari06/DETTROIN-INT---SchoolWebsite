@@ -31,7 +31,7 @@ const pillars = [
 ];
 
 const quickLinks = [
-  { to: "/academics", title: "Academics", text: "CBSE, IGCSE, and the Junior School pathway.", icon: "bi-journal-bookmark" },
+  { to: "/academics", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT950AtboLkEIqluXh2xFH-Jmf212CaIzjqhXHcuG7nW8BS_TXTsuG_SR8&s=10", title: "Academics", text: "CBSE, IGCSE, and the Junior School pathway.", icon: "bi-journal-bookmark" },
   { to: "/campus-life", title: "Campus Life", text: "Labs, sports, arts and eight acres to explore.", icon: "bi-tree" },
   { to: "/news", title: "News & Events", text: "What's on, and what we're proud of.", icon: "bi-megaphone" },
 ];
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className="col-lg-5">
               <div className="vvs-hero-media">
-                <img src="/public/images/hero-campus.jpg" alt="Vasant Valley School campus" className="img-fluid rounded-4" loading="lazy" />
+                <img src="/images/hero-campus.jpg" alt="Vasant Valley School campus" className="img-fluid rounded-4" loading="lazy" />
               </div>
             </div>
           </div>
@@ -103,6 +103,7 @@ export default function Home() {
             {quickLinks.map((q) => (
               <div className="col-md-4" key={q.to}>
                 <Link to={q.to} className="vvs-quicklink">
+                 <img src={.image} alt="" className="vvs-pillar-bg" loading="lazy" aria-hidden="true" />
                   <i className={`bi ${q.icon}`}></i>
                   <h3>{q.title}</h3>
                   <p>{q.text}</p>

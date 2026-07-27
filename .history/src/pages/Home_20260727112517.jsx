@@ -11,6 +11,7 @@ const pillars = [
   {
     icon: "bi-mortarboard",
     title: "Academic Excellence",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT950AtboLkEIqluXh2xFH-Jmf212CaIzjqhXHcuG7nW8BS_TXTsuG_SR8&s=10",
     text: "A rigorous CBSE & IGCSE foundation that consistently ranks among India's top co-ed day schools.",
   },
   {
@@ -61,7 +62,7 @@ export default function Home() {
             </div>
             <div className="col-lg-5">
               <div className="vvs-hero-media">
-                <img src="/public/images/hero-campus.jpg" alt="Vasant Valley School campus" className="img-fluid rounded-4" loading="lazy" />
+                <img src="/images/hero-campus.jpg" alt="Vasant Valley School campus" className="img-fluid rounded-4" loading="lazy" />
               </div>
             </div>
           </div>
@@ -85,6 +86,7 @@ export default function Home() {
             {pillars.map((p) => (
               <div className="col-md-6 col-lg-3" key={p.title}>
                 <div className="vvs-pillar">
+                  <img src={p.image} alt="" className="vvs-pillar-bg" loading="lazy" aria-hidden="true" />
                   <i className={`bi ${p.icon} vvs-pillar-icon`}></i>
                   <h3>{p.title}</h3>
                   <p>{p.text}</p>

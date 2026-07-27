@@ -22,7 +22,7 @@ const tabs = [
     label: "Junior School",
     title: "Junior School",
     text: "The Junior School lays the groundwork for everything that follows — building curiosity, confidence and foundational skills before students move into the Senior School.",
-    image: "/public/images/JuniorSchool.jpg",
+    image: "/public/",
     alt: "Junior school students",
   },
 ];

@@ -14,7 +14,7 @@ const tabs = [
     label: "IGCSE & A Levels",
     title: "IGCSE, AS & A Levels",
     text: "Introduced for Classes IX and X, the IGCSE curriculum gives students an internationally benchmarked alternative, continuing into AS and A Levels for Classes XI and XII.",
-    image: "/public/images/ICSE.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm7PJ89CVu3vKH2Ba6ByEM4WiM7veAIiQm2-R8zF6tddRP_26PkQ06d0NA&s=10",
     alt: "IGCSE classroom",
   },
   {
@@ -22,7 +22,7 @@ const tabs = [
     label: "Junior School",
     title: "Junior School",
     text: "The Junior School lays the groundwork for everything that follows — building curiosity, confidence and foundational skills before students move into the Senior School.",
-    image: "/public/images/JuniorSchool.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cLYXUUd8cJe_jX2uLNQhIwhvEGN9q04jsEUuJz9Nf-8ra7aQ28GwyKg&s=10",
     alt: "Junior school students",
   },
 ];

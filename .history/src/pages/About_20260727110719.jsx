@@ -13,7 +13,7 @@ export default function About() {
           <div className="row align-items-center gy-5">
             <div className="col-lg-6">
               <img
-                src="https://delhinurseryschooladmission.com/wp-content/uploads/2024/11/schoolreopens_0309202110-scaled-1.jpg"
+                src="/images/about-students.svg"
                 alt="Students at Vasant Valley School"
                 className="img-fluid rounded-4 vvs-shadow"
                 loading="lazy"

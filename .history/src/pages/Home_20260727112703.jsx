@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className="col-lg-5">
               <div className="vvs-hero-media">
-                <img src="/public/images/hero-campus.jpg" alt="Vasant Valley School campus" className="img-fluid rounded-4" loading="lazy" />
+                <img src="/images/hero-campus.jpg" alt="Vasant Valley School campus" className="img-fluid rounded-4" loading="lazy" />
               </div>
             </div>
           </div>
@@ -103,6 +103,7 @@ export default function Home() {
             {quickLinks.map((q) => (
               <div className="col-md-4" key={q.to}>
                 <Link to={q.to} className="vvs-quicklink">
+                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT950AtboLkEIqluXh2xFH-Jmf212CaIzjqhXHcuG7nW8BS_TXTsuG_SR8&s=10
                   <i className={`bi ${q.icon}`}></i>
                   <h3>{q.title}</h3>
                   <p>{q.text}</p>
